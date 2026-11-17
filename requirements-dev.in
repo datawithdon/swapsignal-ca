@@ -1,0 +1,5 @@
+-c requirements.txt
+requests
+urllib3
+playwright
+pytest==8.4.2

@@ -1,0 +1,12 @@
+<!doctype html><html><body>
+<h1>Book a service</h1>
+<button id="svc" onclick="setTimeout(show, 150)">Winter tire changeover</button>
+<ul id="slots"></ul>
+<script>
+function show(){
+  const slots = (new URLSearchParams(location.search).get('slots') || '').split('|').filter(Boolean);
+  const ul = document.getElementById('slots');
+  for (const s of slots){ const li=document.createElement('li'); li.className='slot available'; li.textContent=s; ul.appendChild(li); }
+  const full=document.createElement('li'); full.className='slot full'; full.textContent='Mon Nov 23 8:00 (full)'; ul.appendChild(full);
+}
+</script></body></html>
