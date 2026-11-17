@@ -1,0 +1,22 @@
+{
+  "location": "H2Y 1C6",
+  "threshold_c": 7,
+  "streak_days": 3,
+  "metric": "mean",
+  "forecast_days": 10,
+  "ntfy_server": "https://ntfy.sh",
+  "ntfy_topic": "<run: python -m swapsignal new-topic>",
+  "book_url": "https://example-tire-shop.ca/book",
+  "shops": [
+    {
+      "name": "Example Tire & Auto",
+      "url": "https://example-tire-shop.ca/book",
+      "book_url": "https://example-tire-shop.ca/book",
+      "clicks": ["text=Winter tire changeover", "button:has-text('Next')"],
+      "slot_selector": ".time-slot:not(.disabled)",
+      "include": "",
+      "timeout_ms": 30000,
+      "enabled": true
+    }
+  ]
+}
